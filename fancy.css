@@ -1,0 +1,150 @@
+body{
+display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: #DDB892;
+  background-image: url(https://i.postimg.cc/DwkFNz1K/EA29-C7-E5-6013-4724-B021-2-FFA50-B56870.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+#welcome{
+font-size:bold;
+  text-decoration:underline;
+  position:relative;
+  bottom:20px;
+
+}
+
+
+h1{
+  color: #03045E;
+}
+
+#legend1 {
+display: block;
+padding: 0 5px;
+background-color: #EDE0D4;
+  font-weight: bold;
+  font-weight:200;
+  width:70px;
+  position:absolute;
+  left:50px;
+  bottom:220px;
+  color: white;
+  cursor:pointer;
+}
+
+#legend2 {
+display: block;
+padding: 0 5px;
+background-color: #EDE0D4;
+  font-weight: bold;
+  font-weight:200;
+  width:40px;
+  position:absolute;
+  left:53px;
+  bottom:173px;
+color: white;
+  cursor:pointer;
+}
+
+#legend3 {
+display: block;
+padding: 0 5px;
+background-color: #EDE0D4;
+  font-weight: bold;
+  font-weight:200;
+  width:60px;
+  position:absolute;
+  left:50px;
+  bottom:128px;
+color: white;
+  cursor:pointer;
+}
+
+#form{
+background-color: #EDE0D4;
+  width:80%;
+  padding-bottom: 50px;
+min-height:100px;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  position:relative;
+  top:80px;
+  border-radius:10px;
+}
+
+input {
+width: 80%;
+padding: 5px;
+color: #03045E;
+border-radius: 5px;
+box-sizing: border-box;
+  outline: none;
+  border: 1px solid white; 
+  transition: border-color 0.5s ease;
+  background-color: #EDE0D4;
+  cursor:pointer;
+  margin-bottom:20px;
+}
+
+input:focus{
+border-color: #03045E;
+}
+
+button{
+  color:  white;
+background-color: #7F5539;
+  width: 80%;
+  height:25px;
+  border-radius:5px;
+  border:none;
+  
+}
+
+.forget{
+margin-top:10px;
+}
+a{
+color:#03045E;
+}
+
+ .focused{
+animation: change 0.5s forwards ease, colorChange forwards 0s ease;
+}
+
+@keyframes change {
+  from{transform: translateY(0px);}
+  to{transform: translateY(-12px) translateX(-13px) scale(0.77) ;}
+
+}
+
+@keyframes colorChange {
+  0%{color:black;}
+  50%{color:#03045E;}
+  100%{color:#03045E;}
+
+}
+
+
+.unfocused{
+animation: backchange 0.5s forwards ease, backcolorChange forwards 0s ease;
+}
+
+@keyframes backchange {
+  from{transform: translateY(-12px) translateX(-13px) scale(0.77) ;}
+  to{transform: translateY(0px);}
+
+}
+
+@keyframes backcolorChange {
+  0%{color:#03045E;}
+  50%{color:#03045E;}
+  100%{color: white;}
+
+}
